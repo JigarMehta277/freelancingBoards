@@ -1,0 +1,30 @@
+{
+  "name": "freelancingboard",
+  "version": "1.0.0",
+  "description": "A application for people who are finding freelancing work",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server --openssl-legacy-provider start",
+    "server": "node server",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "Jigar Mehta",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.9",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "gravatar": "^1.8.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  }
+}

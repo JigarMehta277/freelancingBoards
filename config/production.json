@@ -1,0 +1,7 @@
+{
+  "mongoURI": "mongodb+srv://jigarmehta277:SledgeHammer999@cluster0.nm98r5q.mongodb.net/?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "70e86d51f747cd945faa",
+  "githubSecret":"2ddb516722ad53b81eabc641a62de93395b053e2",
+  "githubToken":"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"
+}
